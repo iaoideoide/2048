@@ -9,8 +9,13 @@
 <body>
     <h1>2048</h1>
     <hr>
+    <button onclick="volver()">volver</button>
     <h2>puntaje: <span id="puntaje">0</span></h2>
-    <div id="tablero">
+    <div id="tablero" class="perdio">
+        <div id="blur-container" class="blur">
+            <h2 id="perdiste">PERDISTE</h2>
+            <button onclick="reiniciar()">Volver a Jugar</button>
+        </div>
     </div>
     <script src="./main.js"></script>
 </body>
